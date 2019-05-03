@@ -15,7 +15,7 @@ if [ "$(id -u)" != "0" ] ; then
 	exit 2
 fi
 
-curl -sS https://raw.githubusercontent.com/jj-x/PiHole-Domain-List/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
+curl -sS https://raw.githubusercontent.com/jj-x/Filter-Domain-List/master/whitelist.txt | sudo tee -a /etc/pihole/whitelist.txt >/dev/null
 echo -e " ${TICK} \e[32m Adding to whitelist... \e[0m"
 sleep 0.1
 echo -e " ${TICK} \e[32m Removing duplicates... \e[0m"
@@ -28,6 +28,6 @@ echo -e " ${TICK} \e[32m Pi-hole's gravity updated \e[0m"
 echo -e " ${TICK} \e[32m Done! \e[0m"
 
 
-echo -e " \e[1m  Star me on GitHub, https://github.com/jj-x/PiHole-Domain-List \e[0m"
+echo -e " \e[1m  Star me on GitHub, https://github.com/jj-x/Filter-Domain-List \e[0m"
 echo -e " \e[1m  Good Day AdBlocking :)\e[0m"
 echo -e "\n\n"
